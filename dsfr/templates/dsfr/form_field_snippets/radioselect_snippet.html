@@ -14,7 +14,7 @@
   </legend>
   {% with field=field|dsfr_input_class_attr %}
     {% for subwidget in field.subwidgets %}
-      <div class="fr-fieldset__element{% if field.field.widget.inline %} fr-fieldset__element--inline{% endif %}">
+      <div class="fr-fieldset__element{% if field.field.widget.attrs.inline %} fr-fieldset__element--inline{% endif %}">
         {{ subwidget }}
       </div>
     {% endfor %}
